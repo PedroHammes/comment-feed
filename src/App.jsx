@@ -5,8 +5,8 @@ import Post from './components/Post/Post'
 
 export default function App() {
 
-  const [ email, setEmail ] = useState('')
-  const [ comment, setComment ] = useState('')
+  const [ email, setEmail ] = useState('example@email.com')
+  const [ comment, setComment ] = useState('Comment #1')
   const [ feed, setFeed ] = useState([])
 
   const submitNewPost = (ev) => {
@@ -56,13 +56,13 @@ export default function App() {
       <div className={styles.NewCommentForm}>
             <input
                 type="text"
+                placeholder='email@example.com'
                 value={email}
                 onChange={(ev) => setEmail(ev.target.value)}
             />
 
             <textarea 
-              name=""
-              id=""
+              placeholder='Your comment here'
               value={comment}
               onChange={(ev) => setComment(ev.target.value)}
             ></textarea>
