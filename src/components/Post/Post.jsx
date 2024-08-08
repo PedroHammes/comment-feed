@@ -1,8 +1,11 @@
+import styles from './post.module.css'
+
 export default function Post({ email, date, comment }) {
     return (
-        <div>
-            <p>{email} | <span>{date}</span>    </p>
-            <p>{comment}</p>
+        <div className={styles.post}>
+            <p className={styles.email}>{email} </p>
+            <p className={styles.date}>{date}</p>
+            <p className={styles.comment}>{comment}</p>
         </div>
     )
 }

@@ -13,7 +13,7 @@ export default function App() {
     ev.preventDefault()
     console.log('Your comment will be sent:')
     const id = Math.floor(Math.random()*1000000000)
-    const date = Date().toLocaleString('pt-BR').slice(0,24)
+    const date = Date().toLocaleString('pt-BR').slice(0,21).toLowerCase()
     const newPost = {
       id: id, 
       email: email,
@@ -22,7 +22,7 @@ export default function App() {
     }
 
     console.log(newPost)
-    setFeed([...feed, newPost])
+    setFeed([newPost,...feed])
     setEmail('')
     setComment('')
   }
