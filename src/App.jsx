@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './styles/app.module.css'
-import Post from './components/Post/Post'
+import Nav from './components/Nav/Nav'
+import Feed from './components/Feed/Feed.jsx/Feed'
 
 
 export default function App() {
@@ -30,28 +31,9 @@ export default function App() {
   return (
     <div className={styles.app}>
       
-      <nav>
-        <h1>Wellcome to our .Chat</h1>
-      </nav>
-      
+      <Nav />
+      <Feed feed={feed}/>
 
-      <section className={styles.feed}>
-        {feed.length > 0 ? (
-          <div className={styles.postsSection}>
-            {feed.map((post) => (
-              <Post
-                key={post.id}
-                email={post.email}
-                date={post.date}
-                comment={post.comment}
-              />
-            ))}
-          </div>
-
-        ): (
-          <p>Comments will appear here</p>
-        )}
-      </section>
       
       <div className={styles.NewCommentForm}>
             <input

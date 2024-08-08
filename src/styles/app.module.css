@@ -15,15 +15,6 @@ cinza #c7c7c7
     justify-content: space-between;
 }
 
-.feed {
-    height: 80%;
-    
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: start;
-    align-items: center;
-}
-
 .NewCommentForm {
     background-color: #f5f5f5;
     width: 100%;

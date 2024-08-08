@@ -1,0 +1,8 @@
+.feed {
+    height: 80%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
