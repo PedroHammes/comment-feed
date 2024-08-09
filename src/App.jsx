@@ -2,13 +2,14 @@ import { useState } from 'react'
 import styles from './styles/app.module.css'
 import Nav from './components/Nav/Nav'
 import Feed from './components/Feed/Feed.jsx/Feed'
+import Form from './components/Form/Form'
 
 
 export default function App() {
 
+  const [ feed, setFeed ] = useState([])
   const [ email, setEmail ] = useState('example@email.com')
   const [ comment, setComment ] = useState('Comment #1')
-  const [ feed, setFeed ] = useState([])
 
   const submitNewPost = (ev) => {
     ev.preventDefault()
@@ -33,24 +34,8 @@ export default function App() {
       
       <Nav />
       <Feed feed={feed}/>
-
+      <Form email={email} setEmail={setEmail} comment={comment} setComment={setComment} submitNewPost={submitNewPost}/>
       
-      <div className={styles.NewCommentForm}>
-            <input
-                type="text"
-                placeholder='email@example.com'
-                value={email}
-                onChange={(ev) => setEmail(ev.target.value)}
-            />
-
-            <textarea 
-              placeholder='Your comment here'
-              value={comment}
-              onChange={(ev) => setComment(ev.target.value)}
-            ></textarea>
-
-            <button onClick={submitNewPost}> ^ </button>
-      </div>
     </div>
   )
 }
