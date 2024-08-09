@@ -13,6 +13,7 @@ export default function Feed({ feed }) {
                             email={post.email}
                             date={post.date}
                             comment={post.comment}
+                            id={post.id}
                         />
                     ))}
                 </div>

@@ -32,6 +32,7 @@ cinza #c7c7c7
 .email {
     font-size: 18px;
     font-weight: 500;
+    color: #1c9be9;
 }
 
 .date {
@@ -42,4 +43,14 @@ cinza #c7c7c7
 
 .comment {
     font-size: 18px;
+}
+
+.id {
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 0.6rem;
+    text-align: end;
+    font-style: italic;
+
+    color: #1c9be9;
 }
