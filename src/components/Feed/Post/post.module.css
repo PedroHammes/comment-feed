@@ -6,7 +6,8 @@ cinza #c7c7c7
 */
 
 .post {
-    min-width: 264px;
+    width: 264px;
+    min-height: 100px;
 
     margin-bottom: 0.8rem;
     border: 2px solid #f5f5f5;
@@ -20,6 +21,7 @@ cinza #c7c7c7
     display: flex;
     flex-flow: column nowrap;
     gap: 0.4rem;
+    flex: auto;
 
     transition: 0.2s;
 }
@@ -43,6 +45,10 @@ cinza #c7c7c7
 
 .comment {
     font-size: 18px;
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    /* white-space: nowrap; */
 }
 
 .id {
