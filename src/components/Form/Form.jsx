@@ -3,8 +3,8 @@ import { useState } from 'react'
 
 export default function Form(props) {
 
-    const [ email, setEmail ] = useState('example@email.com')
-    const [ comment, setComment ] = useState('Comment #1')
+    const [ email, setEmail ] = useState('')
+    const [ comment, setComment ] = useState('')
 
 
     const formSubmit = (ev) => {
@@ -22,13 +22,13 @@ export default function Form(props) {
         >
             <input
                 type="text"
-                // placeholder='email@example.com'
+                placeholder='email@example.com'
                 value={email}
                 onChange={(ev) => setEmail(ev.target.value)}
             />
 
             <textarea 
-            // placeholder='Your comment here'
+            placeholder='Your comment here'
             value={comment}
             onChange={(ev) => setComment(ev.target.value)}
             ></textarea>
