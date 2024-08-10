@@ -41,7 +41,7 @@ export default function Form(props) {
             />
 
             <textarea 
-                placeholder='Your comment here'
+                placeholder='Type here (max 280 char)'
                 value={comment}
                 maxLength={280}
                 onChange={(ev) => setComment(ev.target.value)}
