@@ -6,7 +6,7 @@ cinza #c7c7c7
 */
 
 .post {
-    width: 264px;
+    min-width: 264px;
     min-height: 100px;
 
     margin-bottom: 0.8rem;
@@ -44,11 +44,11 @@ cinza #c7c7c7
 }
 
 .comment {
+    width: 100%;
     font-size: 18px;
     overflow: hidden; /* "overflow" value must be different from "visible" */
     text-overflow: ellipsis;
     word-wrap: break-word;
-    /* white-space: nowrap; */
 }
 
 .id {
@@ -59,4 +59,22 @@ cinza #c7c7c7
     font-style: italic;
 
     color: #1c9be9;
+}
+
+@media screen and (min-width: 769px) {
+    .post {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .post {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .post {
+        max-width: 100%;
+    }
 }
