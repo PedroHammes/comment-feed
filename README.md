@@ -27,4 +27,4 @@ npm run dev
 4. Clique no link para visualizar o projeto no navegador
 
 ## Imagens do projeto
-![alt text](image-1.png)
+![alt text](image-1.png
