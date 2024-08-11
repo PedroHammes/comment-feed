@@ -61,21 +61,6 @@ cinza #c7c7c7
     color: #1c9be9;
 }
 
-/* @media screen and (min-width: 769px) {
-    .post {
-        width: 700px;
-    }
-}
-    */
-
-/* @media screen and (min-width: 426px) and (max-width: 768px) {
-    .post {
-        background-color: aquamarine;
-        min-width: 90%px;
-        width: 700px;
-    }
-} */
-
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     .post {
         width: 1000px;
